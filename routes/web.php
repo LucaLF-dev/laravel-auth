@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::middleware(['auth','verified'])->prefix('admin')->name('admin.')->group(function () {
 
     Route::get('/', function () {
-        return view('dashboard');
+        return view('admin.dashboard');
     })->name('dashnoard');
 
 });
